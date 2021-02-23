@@ -1,0 +1,27 @@
+ {{> navbar}}
+<!-- maps-index -->
+<div class="row mt-4">
+  <div class="col-lg-4">
+    <a href="/maps/new">New Event</a>
+    <h1>Maps</h1>
+    {{#each maps}}
+    <div class="mt-3">
+      <div class="card-body">
+        <h2>{{this.creator}}</h2>
+        <p>{{this.creatorUrl}}</p>
+        <p>{{this.mission}}</p>
+        <p>{{this.goalOne}}</p>
+        <p>{{this.goalTwo}}</p>
+        <p>{{this.goalThree}}</p>
+        <p>{{this.goalFour}}</p>
+        <p>{{this.goalFive}}</p>
+        <p>{{this.category}}</p>
+        <div class="text-right">
+          <a href="#" class="btn btn-info">Rsvp</a>
+          <a href="#" class="btn btn-primary">View</a>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+  </div>
+</div>
