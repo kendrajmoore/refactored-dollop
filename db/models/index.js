@@ -16,7 +16,13 @@ if (process.env.NODE_ENV == production) {
     protocol: 'postgres',
     port:     5432,
     host:     process.env.HOST,
-    logging:  true //false
+    logging:  true,
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false
+      }
+    }
   })
 } else {
   // the application is executed on the local machine ... use mysql
