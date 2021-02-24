@@ -35,7 +35,7 @@ app.use(morgan("dev"));
 
 app.use(cors());
 // static files middleware
-app.use('/public', express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public')));
 
 //require('./controllers/maps')(app, models);
 //add comment
