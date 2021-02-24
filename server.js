@@ -18,7 +18,7 @@ const cookieParser = require("cookie-parser");
 const methodOverride = require("method-override");
 const cors = require("cors");
 
-const models = require('./db/models');
+//const models = require('./db/models');
 
 // Use "main" as our default layout
 app.engine('handlebars', exphbs({ defaultLayout: 'main', handlebars: allowInsecurePrototypeAccess(Handlebars) }));
@@ -28,15 +28,16 @@ app.set('view engine', 'handlebars');
 
 // The following line must appear AFTER const app = express() and before your routes!
 //middleware
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.use(cookieParser());
 app.use(morgan("dev"));
 
 app.use(cors());
 // static files middleware
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/public', express.static(path.join(__dirname, 'public')))
 
-require('./controllers/maps')(app, models);
+//require('./controllers/maps')(app, models);
 
 app.get('/', (req, res) => {
     res.render('home');
