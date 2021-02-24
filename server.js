@@ -38,6 +38,7 @@ app.use(cors());
 app.use('/public', express.static(path.join(__dirname, 'public')))
 
 //require('./controllers/maps')(app, models);
+//add comment
 
 app.get('/', (req, res) => {
     res.render('home');
