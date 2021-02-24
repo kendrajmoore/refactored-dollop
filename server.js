@@ -18,7 +18,7 @@ const cookieParser = require("cookie-parser");
 const methodOverride = require("method-override");
 const cors = require("cors");
 
-//const models = require('./db/models');
+const models = require('./db/models');
 
 // Use "main" as our default layout
 app.engine('handlebars', exphbs({ defaultLayout: 'main', handlebars: allowInsecurePrototypeAccess(Handlebars) }));
@@ -37,7 +37,7 @@ app.use(cors());
 // static files middleware
 app.use('/public', express.static(path.join(__dirname, 'public')))
 
-//require('./controllers/maps')(app, models);
+require('./controllers/maps')(app, models);
 //add comment
 
 app.get('/', (req, res) => {
