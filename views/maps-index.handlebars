@@ -1,0 +1,29 @@
+
+<!-- maps-index -->
+<div class="container">
+  <div class="row">
+    <a href="/maps/new">New Event</a>
+    <h1>Maps</h1>
+    {{#each maps}}
+      <div class="container">
+          <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{this.creator}}</h5>
+                  <p class="card-text">{{this.mission}}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">{{this.goalOne}}</li>
+                  <li class="list-group-item">{{this.goalTwo}}</li>
+                  <li class="list-group-item">{{this.goalThree}}</li>
+                  <li class="list-group-item">{{this.goalFour}}</li>
+                  <li class="list-group-item">{{this.goalFive}}</li>
+                </ul>
+                <div class="card-body">
+                  <a href="{{this.creatorUrl}}" class="card-link">Card link</a>
+                </div>    
+          </div>
+      </div>
+  {{/each}}
+ </div>
+</div>
+
