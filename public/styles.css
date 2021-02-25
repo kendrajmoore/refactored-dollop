@@ -1,7 +1,13 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #F9F8FC;  
+    background-color: #ffffff;  
     overflow-x: hidden;
+    padding: 0px;
+}
+
+.container {
+    padding: 0px;
+    margin: 0px;
 }
 
 @media only screen 
@@ -72,10 +78,8 @@ body {
 navbar
 **********/
 
-.navbar {
-    padding: 1rem;
-    color: black;
-  
+.bg-light {
+    background-color: #ffffff !important;
 }
 
 
@@ -90,7 +94,7 @@ a.btn.btn-primary {
 }
 
 a.nav-link {
-    color: white !important;
+    color: #732D93 !important;
     font-weight: bold;
     font-size: 20px;
 }
@@ -128,12 +132,12 @@ h1.title {
 hero image
 **********/
 
-.top {
+.hero-img {
     background: linear-gradient(rgba(44, 62, 80,.4), rgba(44, 62, 80,.4)), url("https://i.ibb.co/NrJdR9z/pexels-cottonbro-4056529.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-bottom: 650px;
+    padding-bottom: 400px;
 
 }
 
@@ -144,7 +148,7 @@ hero image
 
 
 h1.hero {
-    color: white;
+    color: #732D93;
     font-weight: bold;
     padding-bottom: 50px;
 }
@@ -161,7 +165,7 @@ how it works
 **********/
 
 h5.lead {
-    color: white;
+    color: #732D93;
     font-weight: 600;
     margin-bottom: 50px;
 }
@@ -194,6 +198,10 @@ div.bg-secondary.p-5.text-white  {
     padding-bottom: 50px;
     text-align: left;
     font-weight: lighter;
+}
+
+h5.benefits-features-one {
+    padding-left: 0px;
 }
 
 .jumbotron {
@@ -243,6 +251,7 @@ h2.benefits-features-title-two {
     font-weight: 600;
     color: #732D93 !important;
     padding-top: 50px;
+    padding-left: 40px;
 }
 
 h5 {
@@ -252,6 +261,7 @@ h5 {
 
 h5.benefits-features {
     text-align: left;
+    padding-left: 40px;
 }
 
 h5.bold-text {
@@ -315,15 +325,18 @@ h1.cta {
     font-weight: bold;
     margin-bottom: 50px;
     text-align: left;
+    color: #732D93;
 }
 
 p.cta-small-text  {
     text-align: left;
+    color: #732D93;
 }
 
 p.cta-bold-text {
     font-weight: bold;
     text-align: left;
+    color: #732D93;
 }
 
 #cta-button {
