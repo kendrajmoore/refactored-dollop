@@ -1,29 +1,27 @@
 
 <!-- maps-index -->
-<div class="container">
   <div class="row">
-    <a href="/maps/new">New Event</a>
     <h1>Maps</h1>
     {{#each maps}}
-      <div class="container">
-          <div class="card" style="width: 18rem;">
+      <div class="col-lg-4">
+          <div class="card h-100" style="width: 18rem;">
                 <div class="card-body">
-                  <h5 class="card-title">{{this.creator}}</h5>
-                  <p class="card-text">{{this.mission}}</p>
+                  <h5><a class="card-title" href="{{this.creatorUrl}}">{{this.creator}}</a></h5>
+                  <p class="card-text">Mission: {{this.mission}}</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">{{this.goalOne}}</li>
-                  <li class="list-group-item">{{this.goalTwo}}</li>
-                  <li class="list-group-item">{{this.goalThree}}</li>
-                  <li class="list-group-item">{{this.goalFour}}</li>
-                  <li class="list-group-item">{{this.goalFive}}</li>
+                  <li class="list-group-item">1. {{this.goalOne}}</li>
+                  <li class="list-group-item">2. {{this.goalTwo}}</li>
+                  <li class="list-group-item">3. {{this.goalThree}}</li>
+                  <li class="list-group-item">4. {{this.goalFour}}</li>
+                  <li class="list-group-item">5. {{this.goalFive}}</li>
                 </ul>
-                <div class="card-body">
+                <div class="card-body">l
                   <a href="{{this.creatorUrl}}" class="card-link">Card link</a>
                 </div>    
           </div>
       </div>
   {{/each}}
  </div>
-</div>
+
 

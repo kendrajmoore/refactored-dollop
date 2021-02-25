@@ -342,3 +342,13 @@ p.cta-bold-text {
 #cta-button {
     margin-top: 50px;
 }
+
+li.list-group-item {
+    background-color: white;
+    color: #732D93
+
+}
+
+div#homepage-row.row {
+    padding-left: 30px;
+}
