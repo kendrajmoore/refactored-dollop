@@ -346,7 +346,7 @@ p.cta-bold-text {
 
 li.list-group-item {
     background-color: white;
-    color: #732D93
+    color: #732D93;
 
 }
 
@@ -357,4 +357,26 @@ div#homepage-row.row {
 div.test {
     padding-left: 20px;
     margin-right: 20px;
+}
+
+h1.index {
+    text-align: center;
+    color: #732D93;
+}
+
+div#index.row {
+    padding-left: 20px;
+}
+
+div.card-body {
+    box-shadow: 10px 10px 5px #888888;
+}
+
+div#show.card.h-100 {
+    margin-left: 500px;
+    margin-bottom: 100px;
+}
+
+div.jumbotron.text-left.hero-background-img {
+    padding-top: 0px;
 }

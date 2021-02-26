@@ -1,19 +1,16 @@
 
 <div class="container">
-     <div class="card h-100" style="width: 18rem;">
-          <div class="card-body">
-            <h5><a class="card-title" href="{{map.creatorUrl}}">{{map.creator}}</a></h5>
-            <h5 class="card-title">Creator: {{map.creator}}</h5>
-            <p class="card-text">Mission: {{map.mission}}</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">1. {{map.goalOne}}</li>
-            <li class="list-group-item">2. {{map.goalTwo}}</li>
-            <li class="list-group-item">3. {{map.goalThree}}</li>
-            <li class="list-group-item">4. {{map.goalFour}}</li>
-            <li class="list-group-item">5. {{map.goalFive}}</li>
-          </ul>
-     </div>
+     <div class="card h-100" id="show" style="width: 18rem;">
+                <div class="card-body">
+                  <h5><a class="card-title" href="{{this.creatorUrl}}">{{map.creator}}</a></h5>
+                  <p class="card-text">Mission: {{map.mission}}</p>
+                  <p class="card-text">1. {{map.goalOne}}</p>
+                  <p class="card-text">2. {{map.goalTwo}}</p>
+                  <p class="card-text">3. {{map.goalThree}}</p>
+                  <p class="card-text">4. {{map.goalFour}}</p>
+                  <p class="card-text">5. {{map.goalFive}}</p>
+                </div>
+      </div>
 </div>
      
   

@@ -1,24 +1,19 @@
 
 <!-- maps-index -->
-  <div class="row">
-    <h1>Maps</h1>
+  <div class="row" id="index">
+    <h1 class="index">Vision Maps</h1>
     {{#each maps}}
       <div class="col-lg-4">
           <div class="card h-100" style="width: 18rem;">
                 <div class="card-body">
                   <h5><a class="card-title" href="{{this.creatorUrl}}">{{this.creator}}</a></h5>
                   <p class="card-text">Mission: {{this.mission}}</p>
+                  <p class="card-text">1. {{this.goalOne}}</p>
+                  <p class="card-text">2. {{this.goalTwo}}</p>
+                  <p class="card-text">3. {{this.goalThree}}</p>
+                  <p class="card-text">4. {{this.goalFour}}</p>
+                  <p class="card-text">5. {{this.goalFive}}</p>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">1. {{this.goalOne}}</li>
-                  <li class="list-group-item">2. {{this.goalTwo}}</li>
-                  <li class="list-group-item">3. {{this.goalThree}}</li>
-                  <li class="list-group-item">4. {{this.goalFour}}</li>
-                  <li class="list-group-item">5. {{this.goalFive}}</li>
-                </ul>
-                <div class="card-body">l
-                  <a href="{{this.creatorUrl}}" class="card-link">Card link</a>
-                </div>    
           </div>
       </div>
   {{/each}}
