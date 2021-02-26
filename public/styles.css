@@ -251,7 +251,7 @@ h2.benefits-features-title-two {
     font-weight: 600;
     color: #732D93 !important;
     padding-top: 50px;
-    padding-left: 40px;
+    padding-left: 32px;
 }
 
 h5 {
@@ -261,7 +261,7 @@ h5 {
 
 h5.benefits-features {
     text-align: left;
-    padding-left: 40px;
+    padding-left: 32px;
 }
 
 h5.bold-text {
@@ -270,6 +270,7 @@ h5.bold-text {
 
 p.thin-text {
     font-weight: 200;
+    padding-left: 11px;
 }
 
 p.lead.mb-4 {
@@ -326,22 +327,26 @@ h1.cta {
     margin-bottom: 50px;
     text-align: left;
     color: #732D93;
+    padding-left: 8px;
 }
 
 p.cta-small-text  {
     text-align: left;
     color: #732D93;
+    padding-left: 11px;
 }
 
 p.cta-bold-text {
     font-weight: bold;
     text-align: left;
     color: #732D93;
+    padding-left: 11px;
 }
 
 #cta-button {
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: 13px;
 }
 
 li.list-group-item {
@@ -351,7 +356,7 @@ li.list-group-item {
 }
 
 div#homepage-row.row {
-    padding-left: 30px;
+    padding-left: 23px;
 }
 
 div.test {
@@ -380,3 +385,12 @@ div#show.card.h-100 {
 div.jumbotron.text-left.hero-background-img {
     padding-top: 0px;
 }
+
+b.home {
+    padding-left: 8px;
+}
+
+div#form.col {
+    padding-left: 8px;
+}
+
