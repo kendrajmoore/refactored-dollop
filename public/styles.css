@@ -300,9 +300,10 @@ h5.footer-text {
 
 div.col-sm-8 {
     background-color: white;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 5px 5px 15px 5px #000000;
     padding-top: 75px;
     padding-bottom: 50px;
+    margin-top: 50px;
     margin-bottom: 100px;
     margin-left: 200px;
 }
@@ -374,7 +375,7 @@ div#index.row {
 }
 
 div.card-body {
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 
 div#show.card.h-100 {

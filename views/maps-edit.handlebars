@@ -1,0 +1,48 @@
+
+ <div class="container-form">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 well">
+				<div class="col-sm-12 form-legend">
+					<h2 class="form-title">Edit Map</h2>
+				</div>
+				<div class="col-sm-12 form-column">
+					<form action="/maps/{{map.id}}?_method=PUT" method="post">
+						<div class="form-group">
+							<label for="creator">Creator</label>
+							<input type="text" id="creator" name="creator" class="form-control" placeholder="e.g. American University Antiracist Research & Policy Center">
+						</div>
+						<div class="form-group">
+							<label for="URL">URL</label>
+							<input type="text" id="url" name="creatorUrl" class="form-control" placeholder="e.g. https://www.american.edu/centers/antiracism/">
+						</div>
+            			<div class="form-group">
+							<label for="Mission">Mission</label>
+							<textarea id="mission" name="mission" class="form-control" placeholder="e.g. The Antiracist Research and Policy Center at American University generates scholarly research, educational tools, and policy analysis geared towards dismantling racism in its many forms. We build multidisciplinary initiatives for fostering racial justice, decolonial politics, and intersectional liberation by forging relationships across AU and with external changemakers in the DC region and beyond."></textarea>
+						</div>
+						<div class="form-group">
+							<label for="goalOne">Goal #1</label>
+							<input type="text" id="goalOne" name="goalOne" class="form-control" placeholder="e.g. Attend a Panel Event">
+						</div>
+						<div class="form-group">
+							<label for="goalTwo">Goal #2</label>
+							<input type="text" id="goalTwo" name="goalTwo" class="form-control" placeholder="e.g. Sign a petition">
+						</div>
+						<div class="form-group">
+							<label for="goalThree">Goal #3</label>
+							<input type="text" id="goalThree" name="goalThree" class="form-control" placeholder="e.g. Subscribe to the experts">
+						</div>
+            			<div class="form-group">
+							<label for="goalFour">Goal #4</label>
+							<input type="text" id="goalFour" name="goalFour" class="form-control" placeholder="optional">
+						</div>
+            			<div class="form-group">
+							<label for="goalFive">Goal #5</label>
+							<input type="text" id="goalFive" name="goalFive" class="form-control" placeholder="optional">
+						</div>
+        
+					    <a href="/maps/{{map.id}}" class='text-muted mr-2'>Cancel</a>
+						<input type="submit" value="Update" class="btn btn-primary" id="form-button">
+					</form>
+				</div>
+			</div>
+		</div>
