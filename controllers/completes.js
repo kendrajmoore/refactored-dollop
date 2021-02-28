@@ -1,8 +1,16 @@
 module.exports = function (app, models) {
 
+    app.get('/maps/:mapId/completes/new', (req, res) => {
+        models.Map.findByPk(req.params.mapId).then(map => {
+          res.render('completes-new', { map: map });
+        });
+      );
+    
+
     app.post('/maps/:mapId/completes', (req, res) => {
-        models.Rsvp.create(req.body).then(rsvp => {
-            res.redirect(`/events/${req.params.eventId}`);
+        req.body.MapId = req.params.mapId;
+        models.Complete.create(req.body).then(complete => {
+          res.redirect(`/maps/${req.params.mapId}`);
         }).catch((err) => {
             console.log(err)
         });
