@@ -6,7 +6,9 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Complete.associate = function(models) {
     // associations can be defined here
-    Complete.belongsTo(models.Map);
+    models.Complete.belongsTo(models.Map, {
+      foreignKey: 'MapId'
+    });
   };
   return Complete;
 };

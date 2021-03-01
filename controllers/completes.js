@@ -4,7 +4,8 @@ module.exports = function (app, models) {
         models.Map.findByPk(req.params.mapId).then(map => {
           res.render('completes-new', { map: map });
         });
-      );
+    });
+    
     
 
     app.post('/maps/:mapId/completes', (req, res) => {

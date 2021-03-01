@@ -13,8 +13,19 @@
                       <a href="/maps/{{map.id}}/edit">Edit</a>
                     </div>
                      <div class="col-lg-4 offset-lg-1">
-                      <a href="/maps/{{map.id}}/complete/new" class="btn btn-primary btn-sm">Completed</a>
-                    </div>
+                      <div class="d-flex justify-content-between">
+                          <b>Completed: ({{map.Completes.length}})</b>
+                          <a href="/maps/{{map.id}}/completes/new" class="btn btn-primary btn-sm">Completed</a>
+                      </div>
+
+                      <div class="list-group mt-4">
+                          {{#each map.Completes}}
+                          <div class="list-group-item">
+                              {{this.name}}
+                          </div>
+                          {{/each}}
+                      </div>
+                  </div>
 
                 </div>
       </div>

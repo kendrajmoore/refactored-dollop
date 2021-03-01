@@ -1,24 +1,23 @@
-
 'use strict';
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.addColumn(
-      'Completes', // name of source model
-      'MapId', // name of key we are adding
-      { 
-        type: Sequelize.INTEGER,
+
+    return queryInterface.addColumn('Completes', 'MapId', Sequelize.INTEGER).then(() => {
+      return queryInterface.addConstraint('Completes', ['MapId'], {
+        type: 'foreign key',
+        name: 'map_completes',
         references: { //Required field
-          model: 'Completes',
-          key: 'id'
+          table: 'Maps',
+          field: 'id'
         },
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
-      }
-    );
+      });
+    });
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.removeColumn('Rsvps', 'EventId');
+    return queryInterface.removeColumn('Completes', 'MapId');  
   }
 };

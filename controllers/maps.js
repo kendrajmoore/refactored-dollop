@@ -14,7 +14,7 @@ module.exports = function (app, models) {
 
     // SHOW
     app.get('/maps/:id', (req, res) => {
-        models.Map.findByPk(req.params.id).then(map => {
+        models.Map.findByPk(req.params.id, { include: [{ model: models.Complete }] }).then(map => {
             res.render('maps-show', { map: map });
         }).catch((err) => {
             console.log(err.message);

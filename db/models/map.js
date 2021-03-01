@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Map.associate = function(models) {
     // associations can be defined here
-    Map.hasMany(models.Complete);
+    models.Map.hasMany(models.Complete);
   };
   return Map;
 };
