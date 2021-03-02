@@ -1,5 +1,5 @@
 
-<div class="container">
+<div class="container" id="show">
      <div class="card h-100" id="show" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">{{map.creator}}</h5>
@@ -15,16 +15,8 @@
                     </div>
                      <div class="col-lg-4 offset-lg-1">
                       <div class="d-flex justify-content-between">
+                          <a href="/maps/{{map.id}}/subs/new" class="btn btn-primary btn-sm" id="subscribe">Subscribe</a>
                           <b>Subs: ({{map.Subs.length}})</b>
-                          <a href="/maps/{{map.id}}/subs/new" class="btn btn-primary btn-sm">Subscribe</a>
-                      </div>
-
-                      <div class="list-group mt-4">
-                          {{#each map.Subs}}
-                          <div class="list-group-item">
-                              {{this.username}}
-                          </div>
-                          {{/each}}
                       </div>
                   </div>
 

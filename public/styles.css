@@ -396,5 +396,25 @@ div#form.col {
 }
 
 div.bg-secondary.p-5.text-white {
-    height: 100px;
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+div#subs.card {
+    margin-bottom: 150px;
+}
+
+a#subscribe.btn.btn-primary.btn-sm {
+    margin-right: 60px;
+    padding: 4px 4px;
+}
+
+div#show.container {
+    margin-top: 50px;
+}
+
+a#index.btn.btn-primary {
+    margin-left: 70px;
 }
