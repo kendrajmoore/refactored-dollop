@@ -2,8 +2,9 @@
 <div class="container">
      <div class="card h-100" id="show" style="width: 18rem;">
                 <div class="card-body">
-                  <h5><a class="card-title" href="{{map.creatorUrl}}">{{map.creator}}</a></h5>
+                  <h5 class="card-title">{{map.creator}}</h5>
                   <p class="card-text">Mission: {{map.mission}}</p>
+                  <p class="card-text">Website: {{map.creatorUrl}}</p>
                   <p class="card-text">1. {{map.goalOne}}</p>
                   <p class="card-text">2. {{map.goalTwo}}</p>
                   <p class="card-text">3. {{map.goalThree}}</p>
@@ -14,14 +15,14 @@
                     </div>
                      <div class="col-lg-4 offset-lg-1">
                       <div class="d-flex justify-content-between">
-                          <b>Completed: ({{map.Completes.length}})</b>
-                          <a href="/maps/{{map.id}}/completes/new" class="btn btn-primary btn-sm">Completed</a>
+                          <b>Subs: ({{map.Subs.length}})</b>
+                          <a href="/maps/{{map.id}}/subs/new" class="btn btn-primary btn-sm">Subscribe</a>
                       </div>
 
                       <div class="list-group mt-4">
-                          {{#each map.Completes}}
+                          {{#each map.Subs}}
                           <div class="list-group-item">
-                              {{this.name}}
+                              {{this.username}}
                           </div>
                           {{/each}}
                       </div>

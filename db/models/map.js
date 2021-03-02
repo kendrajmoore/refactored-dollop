@@ -9,10 +9,13 @@ module.exports = (sequelize, DataTypes) => {
     goalThree: DataTypes.STRING,
     goalFour: DataTypes.STRING,
     goalFive: DataTypes.STRING
-  }, {});
+  }, {
+    freezeTableName: true,
+    tableName: 'Maps',
+  });
   Map.associate = function(models) {
     // associations can be defined here
-    models.Map.hasMany(models.Complete);
+    Map.hasMany(models.Sub);
   };
   return Map;
 };

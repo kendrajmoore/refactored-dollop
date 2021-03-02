@@ -8,7 +8,7 @@ module.exports = {
         type: 'foreign key',
         name: 'map_completes',
         references: { //Required field
-          table: 'Maps',
+          table: 'Map',
           field: 'id'
         },
         onDelete: 'CASCADE',

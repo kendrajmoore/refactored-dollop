@@ -395,3 +395,6 @@ div#form.col {
     padding-left: 8px;
 }
 
+div.bg-secondary.p-5.text-white {
+    height: 100px;
+}
