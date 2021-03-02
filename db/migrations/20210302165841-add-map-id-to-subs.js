@@ -2,22 +2,22 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.addColumn(
-      'Subs', // name of source model
-      'MapId', // name of key we are adding
-      { 
-        type: Sequelize.INTEGER,
+
+    return queryInterface.addColumn('Subs', 'MapId', Sequelize.INTEGER).then(() => {
+      return queryInterface.addConstraint('Subs', ['MapId'], {
+        type: 'foreign key',
+        name: 'map_subs',
         references: { //Required field
-          model: 'Maps',
-          key: 'id'
+          table: 'Maps',
+          field: 'id'
         },
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
-      }
-    );
+      });
+    });
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.removeColumn('Subs', 'MapId');
+    return queryInterface.removeColumn('Subs', 'MapId');  
   }
 };
