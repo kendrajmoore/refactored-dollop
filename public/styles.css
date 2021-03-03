@@ -133,7 +133,7 @@ hero image
 **********/
 
 .hero-background-img {
-    background: linear-gradient(rgba(44, 62, 80,.4), rgba(44, 62, 80,.4)), url("https://i.ibb.co/YBMR552/pexels-andrea-piacquadio-4814713.jpg");
+    background: linear-gradient(rgba(44, 62, 80,.4), rgba(44, 62, 80,.4)), url("/public/img/image.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -273,7 +273,6 @@ h5.bold-text {
 
 p.thin-text {
     font-weight: 200;
-    padding-left: 11px;
 }
 
 p.lead.mb-4 {
@@ -391,7 +390,8 @@ div.jumbotron.text-left.hero-background-img {
 }
 
 b.home {
-    padding-left: 8px;
+    padding-left: 50px;
+    text-align: center;
 }
 
 div#form.col {
@@ -425,4 +425,8 @@ a#index.btn.btn-primary {
 div.jumbo.action {
     padding-top: 100px;
     background-color: #f0f0f0;
+}
+
+img#image.img-fluid.rounded {
+    width: 230px;
 }
