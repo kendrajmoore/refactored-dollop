@@ -9,7 +9,9 @@ module.exports = (sequelize, DataTypes) => {
   });
   Sub.associate = function(models) {
     // associations can be defined here
-    Sub.belongsTo(models.Map);
+    models.Sub.belongsTo(models.Map, {
+      foreignKey: 'MapId'
+    });
   };
   return Sub;
 };

@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   });
   Map.associate = function(models) {
     // associations can be defined here
-    Map.hasMany(models.Sub);
+    models.Map.hasMany(models.Sub);
   };
   return Map;
 };
