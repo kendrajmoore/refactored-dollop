@@ -6,15 +6,10 @@
       <div class="col-lg-4">
           <div class="card h-100" style="width: 18rem;">
                 <div class="card-body">
-                  <h5><a class="card-title" href="/maps/{{this.id}}">{{this.creator}}</a></h5>
-                  <p class="card-text">Mission: {{this.mission}}</p>
-                  <p class="card-text">Website: {{this.creatorUrl}}</p>
-                  <p class="card-text">1. {{this.goalOne}}</p>
-                  <p class="card-text">2. {{this.goalTwo}}</p>
-                  <p class="card-text">3. {{this.goalThree}}</p>
-                  <p class="card-text">4. {{this.goalFour}}</p>
-                  <p class="card-text">5. {{this.goalFive}}</p>
-                  <a href="/maps/{{this.id}}/subs/new" class="btn btn-primary" id="index">Subscribe</a>
+                  <h4 id="card"><a class="card-title" href="/maps/{{this.id}}">{{this.creator}}</a></h4>
+                  <p class="card-text"><b>Mission: </b> {{this.mission}}</p>  
+                  <p class="card-text"><b>Website: </b> {{this.creatorUrl}}</p>         
+                  <a href="/maps/{{this.id}}" class="btn btn-primary" id="index">Learn More</a>
                 </div>
           </div>
       </div>

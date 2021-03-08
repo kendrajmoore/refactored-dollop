@@ -151,7 +151,6 @@ h1.hero {
     color: white;
     margin-top: 200px;
     font-weight: bold;
-    text-align: left;
     padding-bottom: 50px;
 }
 
@@ -429,4 +428,26 @@ div.jumbo.action {
 
 img#image.img-fluid.rounded {
     width: 230px;
+}
+
+h4.card-title {
+    color: #732D93;
+    text-align: center;
+}
+
+h4#card {
+    text-align: center;
+}
+
+
+a:hover {
+    color: #90b6b9;
+  }
+
+a.nav-link:hover {
+    color: #90b6b9;
+}
+
+a.btn.btn-primary:hover {
+    background-color: #90b6b9;
 }
