@@ -358,7 +358,7 @@ li.list-group-item {
 }
 
 div#homepage-row.row {
-    padding-left: 23px;
+    padding-left: 60px;
 }
 
 div.test {
@@ -460,4 +460,8 @@ div.quote {
     padding-bottom: 150px;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+div#homepage-row.row {
+    justify-content: space-evenly;
 }
