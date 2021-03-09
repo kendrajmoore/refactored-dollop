@@ -165,7 +165,7 @@ p.lead {
 how it works
 **********/
 
-h2.lead {
+h2.text {
     color: #90b6b9;
     font-weight: 600;
     margin-bottom: 50px;
@@ -450,4 +450,14 @@ a.nav-link:hover {
 
 a.btn.btn-primary:hover {
     background-color: #90b6b9;
+}
+
+div.quote {
+    color: #90b6b9;
+    background-color: #732D93;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
