@@ -183,7 +183,6 @@ div.bg-secondary.p-5.text-white  {
 
 .img-fluid {
     max-height: 200px;
-    padding: 10px 10px 50px 10px;
     color: #732D93;
 
 }
@@ -332,17 +331,18 @@ h1.cta {
     padding-left: 8px;
 }
 
-p.cta-small-text  {
+h4.cta-small-text  {
     text-align: center;
     color: #90b6b9;
     padding-left: 11px;
 }
 
-p.cta-bold-text {
+h4.cta-bold-text {
     font-weight: bold;
     text-align: center;
     color: #732D93;
     padding-left: 11px;
+    padding-top: 20px;
 }
 
 #cta-button {
@@ -464,4 +464,8 @@ div.quote {
 
 div#homepage-row.row {
     justify-content: space-evenly;
+}
+
+.rounded {
+    border-radius: 25px !important;
 }
