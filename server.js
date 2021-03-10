@@ -41,6 +41,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')))
 
 require('./controllers/maps')(app, models);
 require('./controllers/subs')(app, models);
+require('./controllers/users')(app, models);
 //add comment
 
 app.get('/', (req, res) => {
@@ -49,6 +50,10 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
   res.render('about');
+})
+
+app.get('/success', (req, res) => {
+  res.render('success');
 })
 
 //404 page

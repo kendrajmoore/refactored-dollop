@@ -45,29 +45,29 @@ impact, we empower communities of like-minded individuals to drive real change.<
               <h4 class="cta-small-text">We inspire change as individuals but we make change as communities. Creating the world that we all
 deserve has never been more achievable with Moodefy. It’s time to take action.</h4>
               <h4 class="cta-bold-text">Contact us today</h4>
-              <form action="#" class=''>
+              <form action="/users" method="post"> 
                   <div class="row g-3">
                     <div class="col" id="form">
-                      <input type="text" class="form-control" placeholder="Full name" aria-label="Full name">
+                      <input type="text" class="form-control" placeholder="Full name" name="fullName" aria-label="Full name">
                     </div>
                     <div class="col" id="form">
-                      <input type="text" class="form-control" placeholder="Preferred Email" aria-label="Preferred Email">
+                      <input type="text" class="form-control" placeholder="Preferred Email" name="email" aria-label="Preferred Email">
                     </div>
                   </div>
                    <div class="row g-3">
                     <div class="col" id="form">
-                      <input type="text" class="form-control" placeholder="Website" aria-label="Website">
+                      <input type="text" class="form-control" placeholder="Website" name="website" aria-label="Website">
                     </div>
                     <div class="col" id="form">
-                      <select class="form-select" aria-label=".form-select-sm example">
+                      <select class="form-select" name="vision" aria-label=".form-select-sm example">
                         <option selected>Open this select menu</option>
-                        <option value="1">Creating a community vision</option>
-                        <option value="2">Joining a community vision</option>
-                        <option value="3">All</option>
+                        <option value="Creating a community vision">Creating a community vision</option>
+                        <option value="Joining a community vision">Joining a community vision</option>
+                        <option value="All">All</option>
                       </select>
                     </div>
                   </div>
-                <a href="/about" class="btn btn-primary" id="cta-button">Learn More</a>
+                  <button class="btn btn-primary" id="cta-button" type="submit">Learn More</button>
               </form>
     </div>
   </div>
