@@ -21,6 +21,7 @@ const cors = require("cors");
 
 const models = require('./db/models');
 
+
 // Use "main" as our default layout
 app.engine('handlebars', exphbs({ defaultLayout: 'main', handlebars: allowInsecurePrototypeAccess(Handlebars) }));
 // Use handlebars to render
