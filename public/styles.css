@@ -16,7 +16,7 @@ body {
   and (-webkit-min-device-pixel-ratio: 2) { 
 
     .top {
-        background-image: url("https://i.ibb.co/NrJdR9z/pexels-cottonbro-4056529.jpg");
+        background-image: url("https://i.ibb.co/VjpcrQz/image.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -133,7 +133,7 @@ hero image
 **********/
 
 .hero-background-img {
-    background: linear-gradient(rgba(44, 62, 80,.4), rgba(44, 62, 80,.4)), url("/public/img/image.png");
+    background: linear-gradient(rgba(44, 62, 80,.4), rgba(44, 62, 80,.4)), url("https://i.ibb.co/VjpcrQz/image.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -265,12 +265,15 @@ h5.benefits-features {
     padding-left: 32px;
 }
 
-h5.bold-text {
+h4.bold-text {
+    padding-top: 10px;
     font-weight: 600;
 }
 
-p.thin-text {
+h5.thin-text {
     font-weight: 200;
+    text-align: center;
+   
 }
 
 p.lead.mb-4 {
@@ -348,7 +351,7 @@ h4.cta-bold-text {
 #cta-button {
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 550px;
+    margin-left: 500px;
 }
 
 li.list-group-item {
@@ -389,7 +392,7 @@ div.jumbotron.text-left.hero-background-img {
 }
 
 b.home {
-    padding-left: 50px;
+    padding-left: 55px;
     text-align: center;
 }
 
@@ -468,4 +471,13 @@ div#homepage-row.row {
 
 .rounded {
     border-radius: 25px !important;
+}
+
+img.lost {
+    margin-left: -300px;
+    margin-top: -200px;
+}
+
+img.about {
+    margin-left: -100px;
 }
