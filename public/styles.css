@@ -20,7 +20,7 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
-        padding-bottom: 400px;
+
 
     
     }
@@ -137,7 +137,6 @@ hero image
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-bottom: 400px;
 
 }
 
@@ -166,7 +165,7 @@ how it works
 **********/
 
 h2.text {
-    color: #90b6b9;
+    color: white;
     font-weight: 600;
     margin-bottom: 50px;
     margin-top: 100px;
@@ -309,6 +308,7 @@ div.col-sm-8 {
     margin-top: 50px;
     margin-bottom: 100px;
     margin-left: 200px;
+    border-radius: 15px;
 }
 
 label {
@@ -321,7 +321,7 @@ label {
 }
 
 #form-button {
-    margin-left: 300px;
+    margin-left: 330px;
     margin-top: 40px;
 
 }
@@ -380,6 +380,7 @@ div#index.row {
 
 div.card-body {
     box-shadow: 5px 5px 15px 5px #000000;
+    border-radius: 15px;
 }
 
 div#show.card.h-100 {
@@ -456,8 +457,8 @@ a.btn.btn-primary:hover {
 }
 
 div.quote {
-    color: #90b6b9;
-    background-color: #732D93;
+    color: white;
+    background-color: #90b6b9;
     text-align: center;
     padding-top: 150px;
     padding-bottom: 150px;
@@ -482,3 +483,18 @@ img.about {
     margin-left: -600px;
     margin-top: -800px;
 }
+
+.fa {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+
+  
