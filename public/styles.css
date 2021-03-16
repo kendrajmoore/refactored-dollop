@@ -249,8 +249,8 @@ div.jumbotron.text-center.white {
 }
 
 .col-lg-4 {
-    padding-top: 25px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -289,8 +289,7 @@ h4.bold-text {
 }
 
 h5.thin-text {
-    text-align: center;
-   
+    padding-left: 50px;
 }
 
 p.lead.mb-4 {
@@ -342,7 +341,7 @@ label {
 }
 
 #form-button {
-    margin-left: 330px;
+    margin-left: 400px;
     margin-top: 40px;
 
 }
@@ -373,7 +372,7 @@ h2.cta-bold-text {
 #cta-button {
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 600px;
+    margin-left: 570px;
 }
 
 li.list-group-item {
@@ -383,7 +382,7 @@ li.list-group-item {
 }
 
 div#homepage-row.row {
-    padding-left: 60px;
+    padding-left: 95px;
 }
 
 div.test {
