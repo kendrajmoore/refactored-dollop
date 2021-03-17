@@ -29,70 +29,6 @@ h2 {
 
 
 
-@media only screen 
-  and (min-device-width: 360px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-    .top {
-        background-image: url("https://i.ibb.co/VjpcrQz/image.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-
-
-    
-    }
-
-
-    p.thin-text {
-        padding-left: 20px;
-
-    }
-
-    .btn.btn-primary.mb-2 {
-        margin-left: 120px;
-        margin-top: 10px;
-    }
-
-    .img-fluid {
-        margin-left: 50px;
-    }
-
-    h5.bold-text {
-        margin-left: 80px;
-    }
-
-
-
-}
-
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-    h5.bold-text {
-        margin-left: 250px;
-    }
-
-    p.thin-text {
-        margin-left: 100px;
-
-    }
-
-    .img-fluid {
-        margin-left: 200px;
-    }
-
-
-
-}
-
-
-
-
-
 /**********
 navbar
 **********/
@@ -249,8 +185,8 @@ div.jumbotron.text-center.white {
 }
 
 .col-lg-4 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -372,7 +308,7 @@ h2.cta-bold-text {
 #cta-button {
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 600px;
+    margin-left: 620px;
 }
 
 li.list-group-item {
@@ -524,6 +460,159 @@ img.about {
 
 h2#card {
     text-align: center;
+}
+
+div#id.col-lg-4.col-xl-4.col-xxl-4.col-md-12.col-xs-12.col-sm-12 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 1901px) and (max-width: 2000px) 
+{ 
+    #cta-button {
+        margin-left: 870px;
+    }
+
+}
+
+@media screen and (min-width: 1801px) and (max-width: 1900px) 
+{ 
+    #cta-button {
+        margin-left: 850px;
+    }
+
+}
+
+@media screen and (min-width: 1801px) and (max-width: 1900px) 
+{ 
+    #cta-button {
+        margin-left: 830px;
+    }
+
+}
+
+@media screen and (min-width: 1701px) and (max-width: 1800px) 
+{ 
+    #cta-button {
+        margin-left: 815px;
+    }
+
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1700px) 
+{ 
+    #cta-button {
+        margin-left: 730px;
+    }
+
+}
+
+@media screen and (min-width: 1501px) and (max-width: 1600px) 
+{ 
+    #cta-button {
+        margin-left: 635px;
+    }
+
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1500px) 
+{ 
+    #cta-button {
+        margin-left: 635px;
+    }
+
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1400px) 
+{ 
+    #cta-button {
+        margin-left: 575px;
+    }
+
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1300px) 
+{ 
+    #cta-button {
+        margin-left: 540px;
+    }
+
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1200px) 
+{ 
+    #cta-button {
+        margin-left: 480px;
+    }
+
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) 
+{ 
+    #cta-button {
+        margin-left: 430px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px)  {
+
+    h5.bold-text {
+        margin-left: 250px;
+    }
+
+    p.thin-text {
+        margin-left: 100px;
+
+    }
+
+    .img-fluid {
+        margin-left: 200px;
+    }
+
+    #cta-button {
+        margin-left: 350px;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 667px) { 
+
+    .top {
+        background-image: url("https://i.ibb.co/VjpcrQz/image.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+
+    
+    }
+
+
+    p.thin-text {
+        padding-left: 20px;
+
+    }
+
+    .btn.btn-primary.mb-2 {
+        margin-left: 120px;
+        margin-top: 10px;
+    }
+
+    .img-fluid {
+        margin-left: 50px;
+    }
+
+    h5.bold-text {
+        margin-left: 80px;
+    }
+
+
+
 }
 
   
