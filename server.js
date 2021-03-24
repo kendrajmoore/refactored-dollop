@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000;
 const dotenv = require('dotenv').config()
 
 const bodyParser = require('body-parser');
+const admin = require('firebase-admin')
 // require handlebars
 const exphbs = require('express-handlebars');
 const Handlebars = require('handlebars');
@@ -38,6 +39,8 @@ app.use(morgan("dev"));
 app.use(cors());
 // static files middleware
 app.use('/public', express.static(path.join(__dirname, 'public')))
+
+
 
 require('./controllers/maps')(app, models);
 require('./controllers/subs')(app, models);
