@@ -103,7 +103,7 @@ hero image
 
 h1.hero {
     color: white;
-    margin-top: 200px;
+    margin-top: 100px;
     font-weight: bold;
     padding-bottom: 50px;
 }
@@ -122,8 +122,8 @@ how it works
 h2.text {
     color: white;
     font-weight: 600;
-    margin-bottom: 50px;
-    margin-top: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
