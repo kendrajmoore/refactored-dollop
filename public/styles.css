@@ -477,6 +477,12 @@ h3.sub {
     color: #732D93;
 }
 
+button#delete.btn.btn-primary {
+    margin-top: 20px;
+    margin-left: 407px;
+}
+
+
 @media screen and (min-width: 1901px) and (max-width: 2000px) 
 { 
     #cta-button {

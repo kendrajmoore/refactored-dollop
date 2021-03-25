@@ -43,6 +43,9 @@
 					    <a href="/maps/{{map.id}}" class='text-muted mr-2'>Cancel</a>
 						<input type="submit" value="Update" class="btn btn-primary" id="form-button">
 					</form>
+					<form action="/maps/{{map.id}}?_method=DELETE" method="POST">
+                       <button type="submit" class='btn btn-primary' id='delete'>Delete</button>
+                    </form>
 				</div>
 			</div>
 		</div>
