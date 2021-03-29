@@ -297,6 +297,14 @@ h2.cta-small-text  {
     font-weight: bold;
 }
 
+h2.cta-small-text-two  {
+    text-align: center;
+    color: #90b6b9;
+    padding-left: 11px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
 h2.cta-bold-text {
     font-weight: bold;
     text-align: center;
@@ -480,6 +488,17 @@ h3.sub {
 button#delete.btn.btn-primary {
     margin-top: 20px;
     margin-left: 407px;
+}
+
+img.about-page {
+    margin-top: 20px;
+    margin-left: 120px;;
+    margin-bottom: 20px;
+
+}
+
+div.about-page {
+    background-color: #F0F0F0;
 }
 
 
