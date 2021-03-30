@@ -290,6 +290,14 @@ h1.cta {
     padding-left: 8px;
 }
 
+h1.cta-two {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #732D93;
+    padding-left: 8px;
+}
+
 h2.cta-small-text  {
     text-align: center;
     color: #90b6b9;
@@ -300,9 +308,10 @@ h2.cta-small-text  {
 h2.cta-small-text-two  {
     text-align: center;
     color: #90b6b9;
-    padding-left: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 h2.cta-bold-text {
@@ -498,6 +507,15 @@ img.about-page {
 }
 
 div.about-page {
+    background-color: #F0F0F0;
+}
+
+div.about-info {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+div.gray {
     background-color: #F0F0F0;
 }
 
