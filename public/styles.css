@@ -519,6 +519,11 @@ div.gray {
     background-color: #F0F0F0;
 }
 
+a#calendar.btn.btn-primary {
+    margin-left: 525px;
+    margin-bottom: 30px;
+}
+
 
 @media screen and (min-width: 1901px) and (max-width: 2000px) 
 { 
