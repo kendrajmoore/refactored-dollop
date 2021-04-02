@@ -758,6 +758,11 @@ a#calendar.btn.btn-primary {
         margin-left: 315px;
     }
 
+    div#show.card.h-100 {
+        margin-left: 200px;
+        margin-bottom: 230px;
+    }
+
 
 
 }
@@ -798,6 +803,11 @@ a#calendar.btn.btn-primary {
 
     h2.cta-small-text-two {
         margin-bottom: 3px;
+    }
+
+    div#show.card.h-100 {
+        margin-left: 0px;
+        margin-bottom: 0px;
     }
 
 
