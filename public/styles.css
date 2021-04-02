@@ -503,6 +503,7 @@ img.about-page {
     margin-top: 20px;
     margin-left: 300px;
     margin-bottom: 25px;
+    background-color: #F0F0F0;
 
 }
 
@@ -520,7 +521,7 @@ div.gray {
 }
 
 a#calendar.btn.btn-primary {
-    margin-left: 525px;
+    margin-left: 485px;
     margin-bottom: 30px;
 }
 
@@ -694,6 +695,14 @@ a#calendar.btn.btn-primary {
     
     }
 
+    h2.cta-small-text-two {
+        margin-bottom: 3px;
+    }
+
+    a#calendar.btn.btn-primary {
+        margin-left: 315px;
+    }
+
 
 
 }
@@ -705,9 +714,7 @@ a#calendar.btn.btn-primary {
         background-image: url("https://i.ibb.co/VjpcrQz/image.png");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
-
-
+        background-position: center center
     
     }
 
@@ -730,6 +737,13 @@ a#calendar.btn.btn-primary {
         margin-left: 80px;
     }
 
+    a#calendar.btn.btn-primary {
+        margin-left: 125px;
+    }
+
+    h2.cta-small-text-two {
+        margin-bottom: 3px;
+    }
 
 
 }
