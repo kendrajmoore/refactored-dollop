@@ -1,18 +1,17 @@
 
 <!-- maps-index -->
-  <div class="row" id="index">
-    <h1 class="index">Vision Maps</h1>
-    {{#each maps}}
-      <div class="col-lg-4 col-xl-4 col-xxl-4 col-md-6 col-xs-12 col-sm-12">
-          <div class="card h-100" style="width: 18rem;">
-                <div class="card-body">
-                  <h2 id="card"><a class="card-title" href="/maps/{{this.id}}">{{this.creator}}</a></h2>
-                  <p class="card-text"><b>Vision: </b> {{this.mission}}</p>  
-                  <p class="card-text"><b>Website: </b> {{this.creatorUrl}}</p>         
-                </div>
-          </div>
+<div class="row" id="index">
+  <h1 class="index">Vision Maps</h1>
+  {{#each maps}}
+    <div class="col-lg-4 col-xl-4 col-xxl-4 col-md-6 col-xs-12 col-sm-12">
+      <div class="card h-100" style="width: 18rem;">
+        <div class="card-body">
+          <h2 id="card"><a class="card-title" href="/maps/{{this.id}}">{{this.creator}}</a></h2>
+          <p class="card-text"><b>Vision: </b> {{this.mission}}</p>        
+        </div>
       </div>
-  {{/each}}
- </div>
+    </div>
+{{/each}}
+</div>
 
 
