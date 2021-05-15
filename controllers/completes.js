@@ -6,7 +6,6 @@ module.exports = function (app, models) {
         });
     });
     
-    
 
     app.post('/maps/:mapId/completes', (req, res) => {
         req.body.MapId = req.params.mapId;
