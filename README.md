@@ -24,8 +24,6 @@ Here is a working live demo :  https://moodefy.herokuapp.com/
 
 ## Team
 
-[![Kendra Moore]](https://github.com/kendrajmoore) 
----|---
 [Kendra Moore ](https://github.com/kendrajmoore) 
 
 
