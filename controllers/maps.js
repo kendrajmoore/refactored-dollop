@@ -1,7 +1,6 @@
 
 module.exports = function (app, models) {
 
-    // INDEX
     app.get('/maps-all', (req, res) => {
         models.Map.findAll({ order: [['createdAt', 'DESC']] }).then(maps => {
             res.render('maps-index', { maps: maps });
@@ -10,9 +9,8 @@ module.exports = function (app, models) {
 
     app.get('/maps/new', (req, res) => {
         res.render('maps-new', {});
-      })
+    })
 
-    // SHOW
     app.get('/maps/:id', (req, res) => {
         models.Map.findByPk(req.params.id, { include: [{ model: models.Sub }] }).then(map => {
             res.render('maps-show', { map: map });
@@ -25,43 +23,39 @@ module.exports = function (app, models) {
         res.render('maps-index', { maps: maps });
     })
 
-      // CREATE
     app.post('/maps', (req, res) => {
         models.Map.create(req.body).then(map => {
-            // Redirect to maps/:id
-        res.redirect(`/maps/${map.id}`)
-        
+            res.redirect(`/maps/${map.id}`)
         }).catch((err) => {
-        console.log(err)
+            console.log(err)
         });
     })
 
-    // EDIT
     app.get('/maps/:id/edit', (req, res) => {
         models.Map.findByPk(req.params.id).then((map) => {
-        res.render('maps-edit', { map: map });
+            res.render('maps-edit', { map: map });
         }).catch((err) => {
-        console.log(err.message);
+            console.log(err.message);
         })
     });
 
     //UPDATE
     app.put('/maps/:id', (req, res) => {
         models.Map.findByPk(req.params.id).then(map => {
-        map.update(req.body).then(map => {
-            res.redirect(`/maps/${req.params.id}`);
+            map.update(req.body).then(map => {
+                res.redirect(`/maps/${req.params.id}`);
+            }).catch((err) => {
+                console.log(err);
+            });
         }).catch((err) => {
             console.log(err);
-        });
-        }).catch((err) => {
-        console.log(err);
         });
     });
 
     app.delete('/maps/:id', (req, res) => {
         models.Map.findByPk(req.params.id).then(map => {
           map.destroy();
-          res.redirect(`/`);
+            res.redirect(`/`);
         }).catch((err) => {
           console.log(err);
         });
