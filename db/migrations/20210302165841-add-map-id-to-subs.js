@@ -7,7 +7,7 @@ module.exports = {
       return queryInterface.addConstraint('Subs', ['MapId'], {
         type: 'foreign key',
         name: 'map_subs',
-        references: { //Required field
+        references: { 
           table: 'Maps',
           field: 'id'
         },

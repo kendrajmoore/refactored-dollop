@@ -39,7 +39,7 @@ module.exports = function (app, models) {
         })
     });
 
-    //UPDATE
+
     app.put('/maps/:id', (req, res) => {
         models.Map.findByPk(req.params.id).then(map => {
             map.update(req.body).then(map => {
