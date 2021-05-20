@@ -11,9 +11,6 @@
 </table>
 
 
-## Demo
-Here is a working live demo :  https://moodefy.herokuapp.com/
-
 
 ## Built with 
 
@@ -21,6 +18,8 @@ Here is a working live demo :  https://moodefy.herokuapp.com/
 - [Sequelize](https://sequelize.org/) - Sequelize is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server. It features solid transaction support, relations, eager and lazy loading, read replication and more.
 - [Bootstrap](http://getbootstrap.com/) - Extensive list of components and bundled Javascript plugins.
 
+## Project Status
+- Project used as a prototype only and will be updated due to security flaw with handlebrs
 
 ## Team
 

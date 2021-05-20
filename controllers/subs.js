@@ -1,12 +1,10 @@
 module.exports = (app, models) => {
-    // NEW
     app.get('/maps/:mapId/subs/new', (req, res) => {
       models.Map.findByPk(req.params.mapId).then(map => {
         res.render('subs-new', { map: map });
       });
     });
   
-    // CREATE
     app.post('/maps/:mapId/subs', (req, res) => {
         req.body.MapId = req.params.mapId;
         models.Sub.create(req.body).then(sub => {
@@ -14,7 +12,5 @@ module.exports = (app, models) => {
         }).catch((err) => {
             console.log(err)
         });
-    });
-  
-    // DESTROY  
+    }); 
   }
