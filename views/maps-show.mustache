@@ -1,0 +1,31 @@
+
+{{> header}}
+{{> navbar}}
+  <div class="col-lg-4 col-xl-4 col-xxl-4 col-md-6 col-xs-12 col-sm-12">
+    <div class="card h-100" id="show" style="width: 18rem;">
+      <div class="card-body">
+        <h4 class="card-title">{{map.creator}}</h4>
+        <p class="card-text"><b>Vision:</b> {{map.mission}}</p>
+        <p class="card-text"><b>Website:</b> {{map.creatorUrl}}</p>
+        <p class="card-text"><b>1. </b> {{map.goalOne}}</p>
+        <p class="card-text"><b>2. </b> {{map.goalTwo}}</p>
+        <p class="card-text"><b>3. </b> {{map.goalThree}}</p>
+        <p class="card-text"><b>4. </b> {{map.goalFour}}</p>
+        <p class="card-text"><b>5. </b> {{map.goalFive}}</p>
+          <div class="text-right">
+            <a href="/maps/{{map.id}}/edit">Edit</a>
+          </div>
+            <div class="col-lg-4 offset-lg-1">
+            <div class="d-flex justify-content-between">
+                <a href="/maps/{{map.id}}/subs/new" class="btn btn-primary btn-sm" id="subscribe">Subscribe</a>
+                <b>Subs: ({{map.Subs.length}})</b>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{> footer}}
+    
+
+     
+  

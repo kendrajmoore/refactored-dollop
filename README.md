@@ -10,7 +10,8 @@
 </tr>
 </table>
 
-
+## Demo
+Here is a working live demo :  https://moodefy.herokuapp.com/
 
 ## Built with 
 
@@ -19,7 +20,7 @@
 - [Bootstrap](http://getbootstrap.com/) - Extensive list of components and bundled Javascript plugins.
 
 ## Project Status
-- Project used as a prototype only and will be updated due to security flaw with handlebrs
+- Project was used primarily as a prototype
 
 ## Team
 
