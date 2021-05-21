@@ -1,11 +1,11 @@
 
 
-# ![WebApp](https://i.ibb.co/6RX0qy2/Screen-Shot-2021-05-20-at-10-49-21-AM.png)
+# ![Moodefy](https://i.ibb.co/6RX0qy2/Screen-Shot-2021-05-20-at-10-49-21-AM.png)
 # WebApp
 <table>
 <tr>
 <td>
-  A webapp that allows non profits and social organizations to track supporter engagement.
+  An app that allows non profits and social organizations to track supporter engagement.
 </td>
 </tr>
 </table>
